@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/00858a209e.js" crossorigin="anonymous"></script>
@@ -11,6 +14,18 @@
     <title>folio</title>
 </head>
 <body>
+    <div class="theme-panel open">
+        <div class="theme-body">
+            <span>Change Theme</span>
+            <div class="btn-group">
+                <button class="switcher-btn active">Light</button>
+                <button class="switcher-btn">Dark</button>
+            </div>
+            <button>
+                <i class="fas fa-chevron-left"></i>
+            </button>
+        </div>
+    </div>
     <main class="site-wrapper">
         <header class="site-header">
             <nav class="navbar">
@@ -34,11 +49,11 @@
                     <div class="code-icon">
                         <i class="fas fa-code"></i>
                     </div>
-                    <h2>Code. Eat. Sleep.</h2>
-                    <div>I create meaningful solutions for your brands and products
+                    <h2 class="header-lg">Code. Eat. Sleep.</h2>
+                    <div class="sub-header">I create meaningful solutions for your brands and products
                         <br>Give your customers the best experience possible.
                     </div>
-                    <div>
+                    <div class="btn btn-primary round-pill">
                         <a href="#" data-open="contact">Let's talk now</a>
                     </div>
                 </div>
@@ -57,7 +72,7 @@
         </header>
         <div class="modal-body">
             <div class="img-wrapper">
-                <img src="/assets/images/week 8 image assets/IMG_0078.jpeg" alt="headshot">
+                <img src="/assets/images/IMG_0078.jpeg" alt="headshot">
             </div>
             <h2>Sanatjon Burkhanov</h2>
             <p>text 1</p>
@@ -69,6 +84,8 @@
         </div>
     </div>
 
+
+
 <!-- Contact Page Modal -->
     <div id="contact" class="full-site-modal page-block" data-animation="zoomInOut">
         <header class="modal-header">
@@ -77,7 +94,7 @@
         </header>
         <div class="modal-body">
             <div class="img-wrapper">
-                <img src="/assets/images/week 8 image assets/IMG_0078.jpeg" alt="headshot">
+                <img src="/assets/images/IMG_0078.jpeg" alt="headshot">
             </div>
             <h2>Sanatjon Burkhanov</h2>
             <p>text 1</p>
