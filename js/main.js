@@ -13,7 +13,7 @@ const modelClose = '[data-close]';
 const isVisible = 'is-visible';
 
 const dataFilter = '[data-filter]';
-
+const portFolioData = '[data-item]';
 
 const root = document.documentElement;
 
@@ -22,7 +22,10 @@ const toggleTheme = document.querySelector(themeTab);
 const switcher = document.querySelectorAll(switcherBtn);
 const currentTheme = localStorage.getItem(theme);
 
+/* Portfolio */
 const filterLink = document.querySelectorAll(dataFilter);
+const portfolioItems = document.querySelectorAll(portFolioData);
+const searchBox = document.querySelector('#search')
 
 /* Modal */
 const openModel = document.querySelectorAll(modelOpen);
@@ -68,9 +71,30 @@ toggleTheme.addEventListener('click', function(){
     }
 })
 
+searchBox.addEventListener('keyup', (event)=>{
+    const searchInput = event.target.value.toLowerCase().trim();
+    portfolioItems.forEach((card)=>{
+        if(card.dataset.item.includes(searchInput)){
+            card.style.display = 'block';
+        }else {
+            card.style.display = 'none';
+        }
+    })
+})
+
 for(const link of filterLink){
     link.addEventListener('click',function(){
-        setActive(link,'.filter-link')
+        setActive(link,'.filter-link');
+        const filter = this.dataset.filter;//data-filter it was on the <li> i am putting as reminder for my self
+        portfolioItems.forEach((card)=>{
+            if(filter === 'all'){
+                card.style.display = 'block';
+            }else if(card.dataset.item === filter){//data-item
+                card.style.display = 'block';
+            }else{
+                card.style.display = 'none';
+            }
+        })
     })
 }
 
