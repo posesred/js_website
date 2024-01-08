@@ -125,40 +125,43 @@ for(const element of closeModel){
     })
 }
 
-function AbsHtml(portfolioCardDiv,cardBodyDiv,dataItems,popUpBoxClassA,PortfolioInnerTxtDiv,PortfolioInnerTxth3) {
-    const portfolioGrid = document.querySelector('.portfolio-grid');
-    for(let i = 0; i<PortfolioInnerTxtDiv.length;i++){
-        const card = document.createElement('div');
-        card.classList.add(portfolioCardDiv);
-        card.setAttribute('data-item', dataItems[i]);
+// function AbsHtml(portfolioCardDiv,cardBodyDiv,dataItems,popUpBoxClassA,PortfolioInnerTxtDiv,PortfolioInnerTxth3) {
+//     const portfolioGrid = document.querySelector('.portfolio-grid');
+//     for(let i = 0; i<PortfolioInnerTxtDiv.length;i++){
+//         const card = document.createElement('div');
+//         card.classList.add(portfolioCardDiv);
+//         card.setAttribute('data-item', dataItems[i]);
 
-        const cardBody = document.createElement('div');
-        cardBody.classList.add(cardBodyDiv);
+//         const cardBody = document.createElement('div');
+//         cardBody.classList.add(cardBodyDiv);
         
-        const image = document.createElement('img');
-        image.setAttribute('src',`./assets/images/portfolio-${i+1}.jpg`);
+//         const image = document.createElement('img');
+//         image.setAttribute('src',`./assets/images/portfolio-${i+1}.jpg`);
 
 
-        const aLink = document.createElement('a')
-        aLink.classList.add(popUpBoxClassA);
-        aLink.setAttribute('href','#');
+//         const aLink = document.createElement('a')
+//         aLink.classList.add(popUpBoxClassA);
+//         aLink.setAttribute('href','#');
 
 
-        const title = document.createElement('div');
-        title.textContent = PortfolioInnerTxtDiv[i];
+//         const title = document.createElement('div');
+//         title.textContent = PortfolioInnerTxtDiv[i];
 
 
-        const h3Text = document.createElement('h3');
-        h3Text.textContent = PortfolioInnerTxth3[i];
+//         const h3Text = document.createElement('h3');
+//         h3Text.textContent = PortfolioInnerTxth3[i];
 
-        portfolioGrid.appendChild(card);
-        card.appendChild(cardBody);
-        cardBody.appendChild(image);
-        cardBody.appendChild(aLink);
-        aLink.appendChild(title);
-        aLink.appendChild(h3Text);
-    }
-    //me learning lol
+//         aLink.appendChild(title);
+//         aLink.appendChild(h3Text);
+
+//         cardBody.appendChild(image);
+//         cardBody.appendChild(aLink);
+
+//         card.appendChild(cardBody);
+
+        
+//         portfolioGrid.appendChild(card);
+//     }}
     // const div = document.createElement('div');
     // const text = document.createTextNode('yaaa it working'); // Use createTextNode instead of textContent
     // div.appendChild(text);
@@ -170,4 +173,3 @@ function AbsHtml(portfolioCardDiv,cardBodyDiv,dataItems,popUpBoxClassA,Portfolio
     // } else {
     //     console.error('Element with class ' + e + ' not found');
     // }
-}
