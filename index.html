@@ -76,7 +76,7 @@
         </div>
 
         <div class="portfolio-grid">
-            <div class="portfolio-card" data-item="web">
+            <!-- <div class="portfolio-card" data-item="web">
                 <div class="card-body">
                     <img src="./assets/images/portfolio-1.jpg" alt="portfolio icon">
                     <a href="#" class="card-popup-box">
@@ -147,9 +147,10 @@
                         <h3>Fantastic Design</h3>
                     </a>
                 </div>
-            </div>
-        </div>
+            </div> -->
 
+        </div>
+        
     </section>
 
     
@@ -198,5 +199,15 @@
     </main>
 
     <script src="js/main.js"></script>
+<script>
+const portfolioCardDiv = 'portfolio-card';
+const cardBodyDiv = 'card-body'
+const dataItems = ['web', 'web', 'web', 'ui', 'app', 'app', 'app', 'ui'];
+const popUpBoxClassA = 'card-popup-box'
+const PortfolioInnerTxtDiv = ['Web Development', 'Web Development', 'Web Development', 'UI Design', 'App Development', 'App Development', 'App Development', 'UI Design'];
+const PortfolioInnerTxth3 = ['Food Website', 'Skate Website', 'Eating Website', 'Cool Design', 'Game App', 'Gambling App', 'Money App', 'Fantastic Design'];
+
+AbsHtml(portfolioCardDiv, cardBodyDiv, dataItems, popUpBoxClassA, PortfolioInnerTxtDiv, PortfolioInnerTxth3);
+</script>
 </body>
 </html>
