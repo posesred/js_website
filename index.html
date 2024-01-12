@@ -30,7 +30,7 @@
         <header class="site-header">
             <nav class="navbar">
                 <div class="brand-logo">
-                    <a href="/"><h2>folio.</h2></a>
+                    <a href="/"><h2>Pinnacle Creation</h2></a>
                 </div>
                 <div class="navbar-nav">
                     <ul class="ul-defaults-none main-menu">
@@ -76,7 +76,8 @@
         </div>
 
         <div class="portfolio-grid">
-            <div class="portfolio-card" data-item="web">
+            
+            <div class="portfolio-card" data-item="web" data-open="web-1">
                 <div class="card-body">
                     <img src="./assets/images/portfolio-1.jpg" alt="portfolio icon">
                     <a href="#" class="card-popup-box">
@@ -157,20 +158,22 @@
     <!-- Modals -->
     <!-- About page Modal -->
         <div id="about" class="full-site-modal page-block" data-animation="zoomInOut">
-            <header class="modal-header">
-                <h3>ABOUT PAGE</h3>
-                <i class="fas fa-times" data-close></i>
-            </header>
-            <div class="modal-body">
-                <div class="img-wrapper">
-                    <img src="/assets/images/IMG_0078.jpeg" alt="headshot">
-                </div>
-                <h2>Sanatjon Burkhanov</h2>
-                <p>text 1</p>
-                <p>text 2</p> 
-                <div>
-                    <div>Email Me:</div>
-                    <a href="mailto:sburhanov1977@gmail.com">sburhanov1977@gmail.com</a>
+            <div class="container-fluid">
+                <header class="modal-header">
+                    <h3>ABOUT PAGE</h3>
+                    <i class="fas fa-times" data-close></i>
+                </header>
+                <div class="modal-body">
+                    <div class="img-wrapper">
+                        <img src="/assets/images/IMG_0078.jpeg" alt="headshot">
+                    </div>
+                    <h2>Sanatjon Burkhanov</h2>
+                    <p>text 1</p>
+                    <p>text 2</p> 
+                    <div>
+                        <div>Email Me:</div>
+                        <a href="mailto:sburhanov1977@gmail.com">sburhanov1977@gmail.com</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -179,20 +182,42 @@
 
     <!-- Contact Page Modal -->
         <div id="contact" class="full-site-modal page-block" data-animation="zoomInOut">
-            <header class="modal-header">
-                <h3>Contact Page</h3>
-                <i class="fas fa-times" data-close></i>
-            </header>
-            <div class="modal-body">
-                <div class="img-wrapper">
-                    <img src="/assets/images/IMG_0078.jpeg" alt="headshot">
+            <div class="container-fluid">
+                <header class="modal-header">
+                    <h3>Contact Page</h3>
+                    <i class="fas fa-times" data-close></i>
+                </header>
+                <div class="modal-body">
+                    <div class="img-wrapper">
+                        <img src="/assets/images/IMG_0078.jpeg" alt="headshot">
+                    </div>
+                    <h2>Sanatjon Burkhanov</h2>
+                    <p>text 1</p>
+                    <p>text 2</p> 
+                    <div>
+                        <div>Email Me:</div>
+                        <a href="mailto:sburhanov1977@gmail.com">sburhanov1977@gmail.com</a>
+                    </div>
                 </div>
-                <h2>Sanatjon Burkhanov</h2>
-                <p>text 1</p>
-                <p>text 2</p> 
-                <div>
-                    <div>Email Me:</div>
-                    <a href="mailto:sburhanov1977@gmail.com">sburhanov1977@gmail.com</a>
+            </div>
+        </div>
+
+        <!-- Popup Modals -->
+        <div id="web-1" class="modal" data-animation="slideInTop">
+            <div class="modal-dialog">
+                <header class="modal-header">
+                    <h3>Web Project 1</h3>
+                    <i class="fas fa-times" data-close></i>
+                </header>
+                <div class="modal-body">
+                    <div class="img-wrapper">
+                        <img src="./assets/images/portfolio-1.jpg" alt="portfolio image">
+                    </div>
+                    <div class="text-wrapper">
+                        <p><strong>My first cool website</strong></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                    </div>
                 </div>
             </div>
         </div>

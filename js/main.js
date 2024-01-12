@@ -119,11 +119,24 @@ for (const element of openModel){
 
 for(const element of closeModel){
     element.addEventListener('click',function(){
-        this.parentElement.parentElement.classList.remove(isVisible);
+        this.parentElement.parentElement.parentElement.classList.remove(isVisible);
         //so when we were adding we were already at that level however this needs to go up to get that div
         //your structure must be clear
     })
 }
+
+//Modal
+document.addEventListener('click',(e)=>{
+    if(e.target===document.querySelector(`.modal.is-visible`)){
+        document.querySelector(`.modal.is-visible`).classList.remove(isVisible);
+    }
+});
+document.addEventListener('keyup',(e)=>{
+    console.log(e.key);
+    if(e.key==='Escape'){
+        document.querySelector(`.modal.is-visible`).classList.remove(isVisible);
+    }
+});
 
 // function AbsHtml(portfolioCardDiv,cardBodyDiv,dataItems,popUpBoxClassA,PortfolioInnerTxtDiv,PortfolioInnerTxth3) {
 //     const portfolioGrid = document.querySelector('.portfolio-grid');
