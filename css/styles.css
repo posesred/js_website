@@ -135,6 +135,7 @@
     justify-content: center;
     align-items: center;
     background: rgba(0,0,0,0.8);
+    cursor: pointer;
 }
 
 .modal,
@@ -148,6 +149,7 @@
     transition: all 0.35s ease-in;
     visibility: hidden;
     opacity: 0;
+    z-index: 1000;
 }
 
 .modal-dialog{
@@ -158,6 +160,10 @@
     overflow: hidden;
     padding: 1.25rem 1.85rem;
     border-radius: 5px;
+    cursor: default;
+}
+.modal-dialog .modal-header h3{
+    color: var(--color-text-base);
 }
 
 .modal-body .img-wrapper{
@@ -202,6 +208,18 @@
     transform: scale(0.2);
 }
 
+[data-animation = "slideInTop"] .modal-dialog{
+    opacity: 0;
+    transition: all 0.5s;
+}
+[data-animation="slideInTop"].is-visible .modal-dialog{
+    opacity: 1;
+    transition-delay: 0.2s;
+}
+[data-animation = "slideInTop"] .modal-dialog{
+    transform: translateY(-100%);
+}
+[data-animation = "slideInTop"].is-visible .modal-dialog,
 [data-animation="zoomInOut"].full-site-modal.is-visible{
     transform: none;
 }
@@ -308,6 +326,7 @@
 .portfolio-card:hover .card-popup-box{
     bottom: 20px;
     opacity: 1;
+    cursor: pointer;
 }
 
 .card-popup-box div{
