@@ -132,7 +132,6 @@ document.addEventListener('click',(e)=>{
     }
 });
 document.addEventListener('keyup',(e)=>{
-    console.log(e.key);
     if(e.key==='Escape'){
         document.querySelector(`.modal.is-visible`).classList.remove(isVisible);
     }
