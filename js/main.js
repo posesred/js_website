@@ -137,6 +137,16 @@ document.addEventListener('keyup',(e)=>{
     }
 });
 
+
+const elementsDisplayed = getComputedStyle(root).getPropertyValue('--marquee-elements-displayed');
+const marqueeContent = document.querySelector('ul.marquee-content');
+
+root.style.setProperty('--marquee-elements',marqueeContent.children.length);
+
+for(let i = 0; i < elementsDisplayed; i++){
+    marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+}
+
 // function AbsHtml(portfolioCardDiv,cardBodyDiv,dataItems,popUpBoxClassA,PortfolioInnerTxtDiv,PortfolioInnerTxth3) {
 //     const portfolioGrid = document.querySelector('.portfolio-grid');
 //     for(let i = 0; i<PortfolioInnerTxtDiv.length;i++){
