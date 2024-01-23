@@ -7,6 +7,7 @@
 #contact .modal-body{
     padding: 2rem;
     flex-wrap: wrap;
+    
 }
 
 #about .img-wrapper{
@@ -93,6 +94,10 @@
     animation: fading var(--marquee-duration-animation) linear infinite;
 }
 
+.marquee .marquee-content:hover{
+    animation-play-state: paused;
+}
+
 .marquee-content li{
     width: var(--marquee-element-width);
     display: flex;
@@ -102,6 +107,15 @@
     white-space: nowrap;
     flex-shrink: 0;
     font-size: calc( var(--marquee-height) * 3 / 4 );
+}
+
+.form-control::placeholder{
+    color: var(--color-text);
+    font-size: 16px;
+}
+.form-control.textArea{
+    height: 50px; 
+    width: 500px;
 }
 
 @media (max-width: 991px){
