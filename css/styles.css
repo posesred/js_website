@@ -126,7 +126,6 @@
   font-size: 15px;
   line-height: 26px;
   cursor: pointer;
-  text-transform: lowercase;
 }
 .modal {
   display: flex;
